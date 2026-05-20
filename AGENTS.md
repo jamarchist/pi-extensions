@@ -44,6 +44,10 @@ When writing tools:
   - Tools: `dotnet_build_solution`, `dotnet_build_project`
 - `dotnet-run` — Provides focused wrappers around `dotnet run` for web apps, finite console apps, long-running console/worker apps, and stopping tracked runs.
   - Tools: `dotnet_run_web`, `dotnet_run_console`, `dotnet_run_console_daemon`, `dotnet_stop`
+- `git-operations` — Provides focused wrappers around simple git staging and committing operations.
+  - Tools: `git_add`, `git_commit`
+- `playwright-cli` — Provides focused wrappers around `npx playwright-cli` page/session commands.
+  - Tools: `playwright_open`, `playwright_goto`, `playwright_close`
 - `scoped-fs` — Restricts built-in filesystem tools to configured directory scopes and blocks `bash` to prevent scope bypasses.
   - Tools: none
   - Guards built-in tools: `read`, `write`, `edit`, `ls`, `grep`, `find`
